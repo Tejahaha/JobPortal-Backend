@@ -12,11 +12,11 @@ public class User {
 
     @Column
     String fullname;
-    @Column
+    @Column 
     @Id
     String email;
     @Column
-    String role;
+    int role;
     @Column
     String password;
 
@@ -36,12 +36,12 @@ public class User {
         this.email = email;
     }
 
-    public String getRole() {
+    public int getRole() {
         return role;
     }
 
-    public void setRole(String role) {
-        this.role = role;
+    public void setRole(int role) {
+        this.role=role;
     }
 
     public String getPassword() {
